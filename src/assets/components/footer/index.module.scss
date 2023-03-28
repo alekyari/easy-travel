@@ -1,0 +1,66 @@
+@import "../../../styles/style_modules/mixins";
+@import "../../../styles/style_modules/variables";
+
+
+.footer {
+  font-size: 0.9rem;
+  @include flex-container(column);
+  padding-top: 30px;
+  background-color: $background-secondary-color;
+  margin:0;
+  padding:25px;
+ 
+  
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:20px;
+  height: 80px;
+  list-style: none;
+
+.li {
+  height: 60px;
+  gap: 40px;
+  text-decoration: none;
+  list-style: none;
+
+
+}
+
+.element {
+ color:white;
+ text-decoration: none;
+
+
+}
+}
+}
+
+@media screen and (min-width: 1050px) {
+
+  .footer {
+      
+       
+  .container {
+  
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:100px;
+    list-style: none;
+    
+    
+  }
+
+  
+
+}
+
+  
+}
