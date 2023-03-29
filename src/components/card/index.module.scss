@@ -1,0 +1,21 @@
+@import "../../styles/style_modules/mixins";
+@import "../../styles/style_modules/variables";
+
+.Card {
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.35s;
+  background-color: $background-secondary-color;
+  padding:15px;
+  border-radius: 6px;
+  box-shadow: 5px 10px #888888a7;
+  width: 400px;
+  height:330px;
+
+
+  &:hover {
+    transform: scale(0.9);
+  }
+
+ 
+}

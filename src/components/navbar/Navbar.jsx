@@ -1,5 +1,4 @@
 import styles from "./index.module.scss";
-
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import {  FiSearch  } from 'react-icons/fi';
@@ -24,15 +23,15 @@ const Navbar = () =>{
      {showNavMenu && <ul className={styles.main_list_mobile}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
-        <li><Link to="/activity/myactivity">Activity</Link></li>
-        <li><Link to="/city/city">City</Link></li>
+        <li><Link to="/activities">Activities</Link></li>
+        <li><Link to="/city">City</Link></li>
       </ul>}
 
       <ul className={styles.main_list}>
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
-        <li><Link to="/activity/myactivity">Activity</Link></li>
-        <li><Link to="/city/city">City</Link></li>
+        <li><Link to="/activities">Activities</Link></li>
+        <li><Link to="/city">City</Link></li>
       </ul>
 <h3> EASY TRAVEL.COM</h3>
  

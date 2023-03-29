@@ -1,6 +1,5 @@
-@import "../../../styles/style_modules/mixins";
-@import "../../../styles/style_modules/variables";
-
+@import "../../styles/style_modules/mixins";
+@import "../../styles/style_modules/variables";
 
 .Navbar {
   @include flex-container( row , space-between );
@@ -163,7 +162,12 @@
         .hamburger {
          display: none;
          }
-         
+      
+    .main_list_mobile{
+      display: none ;
+
+    }  
+
     .main_list {
       // @include flex-container( row , center,center, 18px );
       display: flex ;

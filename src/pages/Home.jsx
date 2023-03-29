@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom";
 import styles from "../styles/pages/Home.module.scss";
-import Navbar from "../assets/components/navbar"
-import Footer from "../assets/components/footer"
-import Content from "../assets/components/content"
+import Content from "../components/content"
 
 export default function Home() {
   return (
     <div className={styles.Home}>
-      <Navbar/>
+      <h1>Wellcome to Easy Travel</h1>
       <Content/>
-      <Footer/>
     </div>
   );
 }
