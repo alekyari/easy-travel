@@ -1,17 +1,18 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./index.module.scss";
 
-const Card = ({ data }) => {
+const AttractionCard = ({ data }) => {
   const navigate = useNavigate();
 
   const onHandleClick = () => {
-    navigate(`/activities/${data.tags[2]}`);
+    navigate(`/attractions/${data.name}%27`);
   };
 
   
 
   return (
-    <div className={styles.Card} onClick={onHandleClick}>
+    <div className={styles.AttractionCard} onClick={onHandleClick}>
+      <img src="https://streetviewhub.com/shots?q=nature" alt="ireland" />
       <h3>{data.name}</h3>
       <p><b>You can reach it here!</b> {data.url}</p>
       <p><b>Telephone number</b> {data.telephone}</p>
@@ -20,4 +21,4 @@ const Card = ({ data }) => {
   );
 };
 
-export default Card;
+export default AttractionCard;

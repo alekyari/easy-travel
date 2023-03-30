@@ -1,0 +1,24 @@
+@import "../../styles/style_modules/mixins";
+@import "../../styles/style_modules/variables";
+
+
+.Attractions {
+  
+    @include flex-container( column, center, flex-start, 15px);
+  
+    .Graphic{
+      @include flex-container( row, center, flex-start, 50px, nowrap);
+     
+      
+      img {
+        width: 550px;
+        height: 550px;
+        object-fit: contain;   
+      }
+    
+  
+    }
+   
+  
+  }
+  

@@ -1,13 +1,21 @@
+@import "../../styles/style_modules/mixins";
+@import "../../styles/style_modules/variables";
+
 .Activity {
-  display: flex;
-  align-items: center;
+  @include flex-container( column, center, flex-start, 15px);
 
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  .Graphic{
+    @include flex-container( row, center, flex-start, 50px, nowrap);
+   
+    
+    img {
+      width: 550px;
+      height: 550px;
+      object-fit: contain;   
+    }
+  
 
-  img {
-    width: 50%;
-    height: 300px;
-    object-fit: cover;
   }
+ 
+
 }

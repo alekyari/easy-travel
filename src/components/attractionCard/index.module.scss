@@ -1,7 +1,7 @@
 @import "../../styles/style_modules/mixins";
 @import "../../styles/style_modules/variables";
 
-.Card {
+.AttractionCard {
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
   cursor: pointer;
   transition: transform 0.35s;
@@ -16,6 +16,12 @@
   &:hover {
     transform: scale(0.9);
   }
-
+ 
+  img{
+    width: 100px ;
+    height:80px ;
+    object-fit:contain;
+  }
+   
  
 }

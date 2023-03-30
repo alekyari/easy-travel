@@ -9,26 +9,40 @@ export default function Activity() {
   const { id } = useParams();
   
   useEffect(() => {
-    GET(`activities?$filter=search.ismatch(${id},'tags')`)
-       .then((data) => setActivity(data.results));
-   }, []);
+    GET(`activities?$filter=name%20eq%20%27${id}`).then((res) =>
+      setActivity(() => res.results[0])
+    );
+  }, []);
 
 
-  return (
-    <div className={styles.Activity}>
-      {activity.name ? (
-        <>
-          
-          <section className={styles.texts}>
-          <h3>{activity.name}</h3>
-          <p><b>You can reach it here!</b> {data.url}</p>
-          <p><b>Telephone number</b> {data.telephone}</p>
-          <p><b>Address:</b> {`${data.address.addressLocality}, ${data.address.addressRegion}, ${data.address.addressCountry}`}</p>
-          </section>
-        </>
-      ) : (
-        <h3>Please go back to  <Link to="/activities">Activities</Link> and select another activity</h3>
-      )}
-    </div>
-  );
+return (
+  <div className={styles.Activity}>
+    {activity?.name ? (
+      <>
+        
+        <section className={styles.texts}>
+          <Link to="/activities">
+            <button>Go Back</button>
+          </Link>
+  
+          <h1>{activity.name}</h1>
+          <p>{activity.telephone}</p>
+          <p><b>You can reach it here!</b> {activity.url}</p>
+          <p><b>Telephone number</b> {activity.telephone}</p>
+          <p><b>Address:</b> {`${activity.address.addressLocality}, ${activity.address.addressRegion}, ${activity.address.addressCountry}`}</p>
+          <div className={styles.Graphic}>
+          <img src="https://streetviewhub.com/shots?q=nature" alt="ireland" />
+          <iframe
+            width="400"
+            height="350"
+            src={`https://maps.google.com/maps/?q=+${activity.geo.latitude}+,+${activity.geo.longitude}&output=embed`}>
+            </iframe>
+            </div>
+        </section>
+      </>
+    ) : (
+      <h3>Please go back to  <Link to="/activities">Activities</Link> and select another activity</h3>
+    )}
+  </div>
+);
 }

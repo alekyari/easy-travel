@@ -1,12 +1,12 @@
 @import "../../styles/style_modules/mixins";
 @import "../../styles/style_modules/variables";
 
-.CardList {
+.CardAttractionList {
   display: flex;
   gap: 20px;
   margin: 12px;
   font-size: 0.9rem;
   overflow-x: scroll;
   padding:20px;
-  height:380px;
+  height:500px
 }

@@ -24,6 +24,7 @@ const Navbar = () =>{
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/activities">Activities</Link></li>
+        <li><Link to="/attractions">Attractions</Link></li>
         <li><Link to="/city">City</Link></li>
       </ul>}
 
@@ -31,6 +32,7 @@ const Navbar = () =>{
         <li><Link to="/">Home</Link></li>
         <li><Link to="/about">About</Link></li>
         <li><Link to="/activities">Activities</Link></li>
+        <li><Link to="/attractions">Attractions</Link></li>
         <li><Link to="/city">City</Link></li>
       </ul>
 <h3> EASY TRAVEL.COM</h3>

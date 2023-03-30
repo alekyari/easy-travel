@@ -1,0 +1,26 @@
+@import "../../styles/style_modules/mixins";
+@import "../../styles/style_modules/variables";
+
+.ActivityCard {
+  @include flex-container( column, center, flex-start, 15px, );
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+  transition: transform 0.35s;
+  background-color: $background-secondary-color;
+  padding:15px;
+  border-radius: 6px;
+  box-shadow: 5px 10px #888888a7;
+  width: 400px;
+  height:100%;
+
+
+  &:hover {
+    transform: scale(0.9);
+  }
+img{
+  width: 100px ;
+  height:80px ;
+  object-fit:contain;
+}
+ 
+}

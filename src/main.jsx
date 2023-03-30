@@ -7,6 +7,8 @@ import About from "./pages/About";
 import City from "./pages/City";
 import Activities from "./pages/activities";
 import Activity from "./pages/activities/id";
+import Attractions from "./pages/attractions";
+import Attraction from "./pages/attractions/id";
 import {
   createBrowserRouter,
   RouterProvider,
@@ -42,6 +44,8 @@ const router = createBrowserRouter(
       <Route path="about" element={<About />}/>
       <Route path="activities" element={<Activities />} />
       <Route path="activities/:id" element={<Activity />} />
+      <Route path="attractions" element={<Attractions />} />
+      <Route path="attractions/:id" element={<Attraction />} />
       <Route path="city" element={<City />} />
     </Route>
       
